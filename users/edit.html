@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* ヘッダー */
+    .bookers{
+      font-weight: bold;
+    }
+    @media (max-width: 767px) {
+      .bookers{
+        display:block;
+        width: 100%;
+      }
+    }
+    .main-container {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="navbar navbar-fixed-top navbar-inverse ">
+  <div class="container">
+    <nav class="nav navbar-brand navbar-left bookers">
+      <span>Bookers</span>
+    </nav>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a class="glyphicon glyphicon-home home" href="/"> Home</a></li>
+          <li><a class="glyphicon glyphicon-link about" href="/home/about"> About</a></li>
+          <li><a class="glyphicon glyphicon-edit sign_up" href="/users/sign_up"> sign up</a></li>
+          <li><a class="glyphicon glyphicon-log-in sign_in" href="/users/sign_in"> login</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container main-container">
+    <p id="notice"></p>
+    <h2>User info</h2>
+
+    <form class="edit_user" id="edit_user_15835" enctype="multipart/form-data" action="/users/15835" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="coDQS1nRwBygWx4TmQeX3Y4HbK2OhwNebrER8VBN6PkUznOovKEoOD9C90s1KlzyoT9rziUdAlvSswipdqaFNw==">
+
+
+      <div class="field">
+        <label for="user_name">Name</label>
+        <input class="name" type="text" value="ky" name="user[name]" id="user_name">
+      </div>
+
+      <div class="field">
+        <label for="user_image">Image</label>
+        <input value="{}" data-reference="ddc21469807843ec64d84d433dd5571e" type="hidden" name="user[profile_image]"><input class="user_image" data-reference="ddc21469807843ec64d84d433dd5571e" include_hidden="false" type="file" name="user[profile_image]" id="user_profile_image">
+      </div>
+
+      <div class="field">
+        <label for="user_introduction">Introduction</label>
+        <textarea class="introduction" name="user[introduction]" id="user_introduction">kです</textarea>
+      </div>
+
+      <div class="actions">
+        <input type="submit" name="commit" value="Update User" data-disable-with="Update User">
+      </div>
+    </form>
+  </div>
+</main>
+
+
+
+  <footer>
+    <div class="container">
+    	<div class="row">
+      	<div class="col-xs-3 col-xs-offset-9">
+      		<p>CopyRight Infratop.inc</p>
+      	</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

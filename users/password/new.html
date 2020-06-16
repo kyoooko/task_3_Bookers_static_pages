@@ -1,0 +1,25 @@
+<div class="body">
+  <div class="container">
+
+    <p id="notice"></p>
+
+
+  	<h2>Forgot your password?</h2>
+
+    <form class="new_user" id="new_user" action="/users/password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="jlOCbjHl85358TgTKpFP3Ynh1NdYaIN5eIsizcyhhwat+sOVjRfFq1BxbhxGO4j2cKRUoyLqlLhdjwUJXpwb7Q==">
+
+
+      <div class="field">
+        <label for="user_email">Email</label><br>
+        <input autofocus="autofocus" type="email" value="" name="user[email]" id="user_email">
+      </div>
+
+      <div class="actions">
+        <input type="submit" name="commit" value="Send me reset password instructions" class="btn btn-danger" data-disable-with="Send me reset password instructions">
+      </div>
+    </form>
+    <a class="sign_in" href="/users/sign_in">Log in</a><br>
+
+    <a class="sign_up" href="/users/sign_up">Sign up</a><br>
+ </div>
+</div>

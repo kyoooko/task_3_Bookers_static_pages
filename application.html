@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <title>Bookers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* ヘッダー */
+    .bookers{
+      font-weight: bold;
+    }
+    @media (max-width: 767px) {
+      .bookers{
+        display:block;
+        width: 100%;
+      }
+    }
+    .main-container {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="navbar navbar-fixed-top navbar-inverse ">
+  <div class="container">
+    <nav class="nav navbar-brand navbar-left bookers">
+      <span>Bookers</span>
+    </nav>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a class="glyphicon glyphicon-home home" href="/"> Home</a></li>
+          <li><a class="glyphicon glyphicon-link about" href="/home/about"> About</a></li>
+          <li><a class="glyphicon glyphicon-edit sign_up" href="/users/sign_up"> sign up</a></li>
+          <li><a class="glyphicon glyphicon-log-in sign_in" href="/users/sign_in"> login</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- <div class="container">
+    <nav class="nav navbar-nav navbar-left">
+      <span>Bookers</span>
+    </nav>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a class="glyphicon glyphicon-home home" href="/users/15835"> Home</a></li>
+          <li><a class="glyphicon glyphicon-user users" href="/users"> Users</a></li>
+          <li><a class="glyphicon glyphicon-book books" href="/books"> Books</a></li>
+          <li><a class="glyphicon glyphicon-log-out logout" rel="nofollow" data-method="delete" href="/users/sign_out"> logout</a></li>
+      </ul>
+    </nav>
+  </div> -->
+
+</header>
+
+<main>
+  <div class="container main-container">
+    <p id="notice"></p>
+    <div style="width:80%; margin: 0 auto; height:10px; background-color:pink;">
+    </div>
+  </div>
+</main>
+
+
+
+  <footer>
+    <div class="container">
+    	<div class="row">
+      	<div class="col-xs-3 col-xs-offset-9">
+      		<p>CopyRight Infratop.inc</p>
+      	</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
